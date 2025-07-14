@@ -254,7 +254,7 @@ img {
 .home__social {
   display: grid;
   justify-items: center;
-  row-gap: 6rem;
+  row-gap: 6.75rem;
   position: absolute;
   top: 9rem;
   left: -1.5rem;
@@ -479,6 +479,22 @@ img {
 }
 
 /*=============== SPONSOR ===============*/
+.sponsor__img {
+  width: 100px;
+  transition: transform 0.4s;
+}
+
+.sponsor__img:hover {
+  transform: scale(1.1);
+}
+
+.sponsor__container {
+  padding-block: 0.5rem 4.5rem;
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  align-items: center;
+  gap: 5rem 4rem;
+}
 
 /*=============== FOOTER ===============*/
 
