@@ -183,6 +183,18 @@ img {
 }
 
 /* Add Blur Header */
+.blur-header::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(23, 12%, 4%, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 /* Active Link */
 
@@ -347,6 +359,22 @@ img {
 }
 
 /*=============== ABOUT ===============*/
+.about__container {
+  row-gap: 3.5rem;
+}
+
+.about__data {
+  text-align: center;
+}
+
+.about__description {
+  margin-bottom: 2.5rem;
+}
+
+.about__img {
+  width: 280px;
+  justify-self: center;
+}
 
 /*=============== FAVORITE ===============*/
 
